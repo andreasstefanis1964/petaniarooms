@@ -906,11 +906,9 @@ iframe.lazy-placeholder,
 section.lazy-placeholder:after {
   opacity: 0.5;
 }
-.cid-sBTUWB1imE .navbar-dropdown {
-  position: relative !important;
-}
-.cid-sBTUWB1imE .navbar-dropdown {
-  position: absolute !important;
+.cid-sBTUWB1imE {
+  z-index: 1000;
+  width: 100%;
 }
 .cid-sBTUWB1imE .nav-link {
   padding: 0!important;
@@ -933,6 +931,9 @@ section.lazy-placeholder:after {
   max-width: 1300px;
   display: flex;
   margin: auto;
+}
+.cid-sBTUWB1imE nav.navbar {
+  position: fixed;
 }
 .cid-sBTUWB1imE .navbar-caption {
   border: 3px solid currentColor;
@@ -1240,6 +1241,7 @@ section.lazy-placeholder:after {
 }
 .cid-sBTUWB1imE .navbar-dropdown {
   padding: 0 1rem;
+  position: fixed;
 }
 .cid-sBTUWB1imE a.nav-link {
   display: flex;
