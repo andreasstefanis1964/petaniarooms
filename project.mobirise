@@ -945,7 +945,7 @@
                 "tooltip": "@PROJECT_PATH@/assets/images/tooltip2.jpg",
                 "title": "Budget",
                 "text": "Double room",
-                "active": false
+                "active": true
               },
               {
                 "image": "@PROJECT_PATH@/assets/images/5e6a9027.jpg-2000x1195.jpg",
@@ -995,7 +995,7 @@
                 "tooltip": "@PROJECT_PATH@/assets/images/tooltip2.jpg",
                 "title": "Studio",
                 "text": "with Kitchen",
-                "active": true
+                "active": false
               }
             ],
             "fullScreen": true,
@@ -1007,8 +1007,8 @@
             "captionsEffect": "slide",
             "showBullets": false,
             "bgColor": "#bed3f9",
-            "timeout": "4",
-            "duration": "3.5",
+            "timeout": "3",
+            "duration": "3",
             "customSize": false,
             "customWidth": "1600",
             "customHeight": "1080",
