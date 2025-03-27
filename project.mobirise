@@ -1033,7 +1033,7 @@
             "theme": "animated",
             "slides": [
               {
-                "image": "@PROJECT_PATH@/assets/images/slide2-1-1600x1080.jpg",
+                "image": "@PROJECT_PATH@/assets/images/5e6a8815.jpg-2000x1195.jpg",
                 "linkUrl": "http://google.com",
                 "link": false,
                 "src": "@ADDONS_PATH@/wowslider/assets/images/slide2.jpg",
@@ -1043,53 +1043,13 @@
                 "active": true
               },
               {
-                "image": "@PROJECT_PATH@/assets/images/slide3-2-1024x576.jpg",
+                "image": "@PROJECT_PATH@/assets/images/5e6a9015.jpg-2000x1195.jpg",
                 "linkUrl": "http://google.com",
                 "link": false,
-                "src": "@ADDONS_PATH@/wowslider/assets/images/slide3.jpg",
-                "tooltip": "@PROJECT_PATH@/assets/images/tooltip3.jpg",
-                "title": "title 1",
-                "text": "text 1",
-                "active": false
-              },
-              {
-                "image": "@PROJECT_PATH@/assets/images/slide3-2-1024x576.jpg",
-                "linkUrl": "http://google.com",
-                "link": false,
-                "src": "@ADDONS_PATH@/wowslider/assets/images/slide3.jpg",
-                "tooltip": "@PROJECT_PATH@/assets/images/tooltip3.jpg",
-                "title": "title 1",
-                "text": "text 1",
-                "active": false
-              },
-              {
-                "image": "@PROJECT_PATH@/assets/images/slide3-2-1600x1080.jpg",
-                "linkUrl": "http://google.com",
-                "link": false,
-                "src": "@ADDONS_PATH@/wowslider/assets/images/slide3.jpg",
-                "tooltip": "@PROJECT_PATH@/assets/images/tooltip3.jpg",
-                "title": "title 1",
-                "text": "text 1",
-                "active": false
-              },
-              {
-                "image": "@PROJECT_PATH@/assets/images/slide3-2-1600x1080.jpg",
-                "linkUrl": "http://google.com",
-                "link": false,
-                "src": "@ADDONS_PATH@/wowslider/assets/images/slide3.jpg",
-                "tooltip": "@PROJECT_PATH@/assets/images/tooltip3.jpg",
-                "title": "title 1",
-                "text": "text 1",
-                "active": false
-              },
-              {
-                "image": "@PROJECT_PATH@/assets/images/slide3-2-1024x576.jpg",
-                "linkUrl": "http://google.com",
-                "link": false,
-                "src": "@ADDONS_PATH@/wowslider/assets/images/slide3.jpg",
-                "tooltip": "@PROJECT_PATH@/assets/images/tooltip3.jpg",
-                "title": "title 1",
-                "text": "text 1",
+                "src": "@ADDONS_PATH@/wowslider/assets/images/slide2.jpg",
+                "tooltip": "@PROJECT_PATH@/assets/images/tooltip2.jpg",
+                "title": "title 2",
+                "text": "text 2",
                 "active": false
               }
             ],
