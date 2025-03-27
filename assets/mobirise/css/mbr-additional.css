@@ -1387,6 +1387,67 @@ section.lazy-placeholder:after {
 .cid-sBUeZxDTz4 .mbr-section-subtitle {
   color: #ffffff;
 }
+.cid-uGFgxy5ElO {
+  padding-top: 0rem;
+  padding-bottom: 3rem;
+  background-color: #1a449a;
+}
+@media (min-width: 1500px) {
+  .cid-uGFgxy5ElO .container {
+    max-width: 1400px;
+  }
+}
+.cid-uGFgxy5ElO .svg-top {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: -48px;
+  height: 50px;
+  transform-origin: bottom;
+  animation: 1.5s ease-in-out infinite alternate svg-wave;
+  fill: #1a449a;
+}
+.cid-uGFgxy5ElO .svg-top .st0 {
+  fill: #1a449a;
+}
+@media (max-width: 992px) {
+  .cid-uGFgxy5ElO .svg-top {
+    width: 1000px;
+  }
+}
+@keyframes svg-wave {
+  from {
+    transform: scaleX(1) scaleY(1.1);
+  }
+  to {
+    transform: scaleX(1) scaleY(1.6);
+  }
+}
+.cid-uGFgxy5ElO .mbr-iconfont {
+  display: block;
+  font-size: 5rem;
+  color: #fff0b0;
+  margin-bottom: 2rem;
+}
+.cid-uGFgxy5ElO .card-wrapper {
+  margin-top: 3rem;
+}
+.cid-uGFgxy5ElO .row {
+  justify-content: center;
+}
+.cid-uGFgxy5ElO .mbr-section-title {
+  color: #fff0b0;
+}
+.cid-uGFgxy5ElO .card-title,
+.cid-uGFgxy5ElO .iconfont-wrapper {
+  color: #ffffff;
+}
+.cid-uGFgxy5ElO .card-text {
+  color: #ffffff;
+}
+.cid-uGFgxy5ElO .mbr-section-subtitle {
+  color: #ffffff;
+}
 .cid-sBUf7bgybF {
   padding-top: 7rem;
   padding-bottom: 10rem;
