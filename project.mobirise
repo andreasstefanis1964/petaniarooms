@@ -2031,6 +2031,9 @@
                   "display": "none"
                 }
               }
+            },
+            ".mbr-section-title": {
+              "color": "#1a449a"
             }
           },
           "_name": "contacts01",

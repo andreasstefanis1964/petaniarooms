@@ -2482,6 +2482,9 @@ section.lazy-placeholder:after {
 .cid-sBUg9Iaey5 .google-map[data-state="loading"] [data-state-details] {
   display: none;
 }
+.cid-sBUg9Iaey5 .mbr-section-title {
+  color: #1a449a;
+}
 .cid-sBUgaYn7WO {
   padding-top: 3rem;
   padding-bottom: 3rem;
