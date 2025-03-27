@@ -844,247 +844,6 @@
           "_styles": {
             "padding-top": "(@paddingTop * 1rem)",
             "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = \"color\")": {
-              "background": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              ".svg-top": {
-                "display": "none"
-              }
-            },
-            ".team-card": {
-              "margin-bottom": "2rem",
-              "transition": "all 0.3s",
-              "&:hover": {
-                "transform": "translateY(-10px)"
-              }
-            },
-            ".more": {
-              "transform": "scale(0) translate(-50%, -50%)",
-              "transition": "all 0.3s",
-              "position": "absolute",
-              "top": "50%",
-              "left": "50%"
-            },
-            ".image-wrap": {
-              "position": "relative",
-              "height": "350px",
-              "cursor": "pointer",
-              "padding-bottom": "1rem",
-              "img": {
-                "height": "100%",
-                "object-fit": "cover"
-              },
-              "&:hover, &:focus-within": {
-                ".read, .img-svg": {
-                  "opacity": "1",
-                  "transform": "scale(1) translate(-50%, -50%)"
-                },
-                ".more": {
-                  "transform": "scale(1)"
-                }
-              },
-              "@media (max-width: 767px)": {
-                ".read, .img-svg": {
-                  "opacity": "1",
-                  "transform": "scale(1) translate(-50%, -50%)"
-                },
-                ".more": {
-                  "transform": "scale(1)"
-                }
-              }
-            },
-            ".read": {
-              "transform": "translate(-50%, -50%)",
-              "position": "absolute",
-              "top": "50%",
-              "left": "50%",
-              "width": "50px",
-              "transition": "all 0.3s",
-              "z-index": "3",
-              "color": "#ffffff",
-              "opacity": "0",
-              "text-align": "center"
-            },
-            ".img-svg": {
-              "transition": "all 0.3s",
-              "opacity": "0",
-              "transform": "translate(-50%, -50%)",
-              "path": {
-                "fill": "@primaryColor"
-              },
-              "position": "absolute",
-              "z-index": "2",
-              "top": "50%",
-              "fill": "@primaryColor",
-              "left": "50%",
-              "animation": "1s ease-in-out infinite alternate curs"
-            },
-            "@keyframes curs": {
-              "from": {
-                "transform": "translate(-50%, -50%) skew(3deg, 0deg) scale(1)"
-              },
-              "to": {
-                "transform": "translate(-50%, -50%) skew(-3deg, 0deg) scale(0.95)"
-              }
-            },
-            ".svg-top": {
-              "width": "100%",
-              "position": "absolute",
-              "left": "0",
-              "top": "-48px",
-              "height": "50px",
-              "transform-origin": "bottom",
-              "animation": "1.5s ease-in-out infinite alternate svg-wave",
-              ".st0": {
-                "fill": "@bg-value"
-              },
-              "@media (max-width: 992px)": {
-                "width": "1000px"
-              },
-              "fill": "@primaryColor"
-            },
-            "@keyframes svg-wave": {
-              "from": {
-                "transform": "scaleX(1) scaleY(1.1)"
-              },
-              "to": {
-                "transform": "scaleX(1) scaleY(1.6)"
-              }
-            },
-            "@keyframes line": {
-              "0%": {
-                "transform": "scaleX(1)"
-              },
-              "50%": {
-                "transform": "scaleX(0)"
-              },
-              "100%": {
-                "transform": "scaleX(1)"
-              }
-            },
-            "h5": {
-              "position": "relative",
-              "display": "inline-block",
-              "width": "fit-content",
-              "&:before": {
-                "content": "''",
-                "position": "absolute",
-                "right": "-65px",
-                "top": "50%",
-                "transform-origin": "left",
-                "height": "2px",
-                "width": "45px",
-                "background": "currentColor"
-              }
-            },
-            ".card-wrap": {
-              "@media (max-width: 991px)": {
-                "margin-bottom": "2rem"
-              },
-              ".image-wrap img": {
-                "width": "100%",
-                "margin-bottom": "1rem"
-              },
-              "&:hover": {
-                "h5": {
-                  "&:before": {
-                    "animation": "1s ease-in-out alternate line"
-                  }
-                }
-              }
-            },
-            ".card-title, .social-row": {
-              "color": "#1a449a"
-            },
-            ".mbr-role, .social-row": {
-              "color": "#ffffff"
-            },
-            ".card-text, .mbr-section-btn, .social-row": {
-              "color": "#ffffff"
-            },
-            ".mbr-section-title": {
-              "color": "#ffffff"
-            },
-            ".card-title, .content-wrap": {
-              "color": "#ffffff"
-            },
-            ".mbr-section-subtitle": {
-              "color": "#ffffff"
-            }
-          },
-          "_name": "features03",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features3\" group=\"Features\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\" checked>\n        <input inline type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"7\">\n        <input inline type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"10\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n        </select>\n        <header>Card</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showName\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showRole\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showCardText\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showCardButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"@THEME_PATH@/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#1a449a\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <svg width=\"100\" height=\"100\" class=\"svg-top\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 1600 40\" style=\"enable-background:new 0 0 1600 40;\" preserveAspectRatio=\"none\">\n        <style type=\"text/css\">\n            .st0 {\n                fill: #1A449A;\n            }\n        </style>\n        <path class=\"st0\" d=\"M-1,15.7c200.1,0,200.7,13.8,400.9,13.8C600,29.5,600.4,9.3,800.5,9.3S998.8,36.8,1199,36.8\n\ts201.9-21.1,402-21.1v24.1L-1,40V15.7z\"></path>\n    </svg>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n\n            <div class=\"col-lg-3 col-md-6 md-pb\" mbr-if=\"showTitle || showText\">\n                <h3 class=\"mbr-section-title mbr-fonts-style align-left mb-3\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Our Rooms</b></h3>\n                <p class=\"mbr-section-subtitle mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-section-subtitle\">\n                    Text</p>\n            </div>\n\n\n            <div class=\"col-sm-6 col-lg-3\" mbr-if=\"cardsAmount > 0\">\n                <div class=\"card-wrap\">\n                    <div class=\"image-wrap\">\n                        <div class=\"more\">\n                            <svg class=\"img-svg\" width=\"100\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\" version=\"1.0\">\n                                <g>\n                                    <path stroke=\"#000\" fill=\"#00ffff\" stroke-width=\"0\" d=\"m6.3597,35.19471c3.72928,-14.92599 8.15276,-26.3096 24.79653,-31.20482c16.64376,-4.89522 47.61714,-4.17429 56.63326,15.6024c9.01612,19.77669 10.43127,65.01743 -7.40514,73.44612c-17.83641,8.42869 -52.82388,8.41088 -62.93475,-7.63655c-10.11087,-16.04743 -15.58461,-25.33055 -12.23805,-47.14544l1.14815,-3.06171z\" id=\"svg_3\"></path>\n                                </g>\n                            </svg>\n                            <p class=\"read mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".read\">More</p>\n                        </div>\n                        <img src=\"@PROJECT_PATH@/assets/images/5e6a8784.jpg-596x356.jpg\" alt>\n                    </div>\n                    <div class=\"content-wrap\">\n                        <h6 class=\"mbr-role mbr-fonts-style mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showRole\" data-app-selector=\".mbr-role, .social-row\">Small Twin Room</h6>\n                        <h5 class=\"mbr-section-title card-title mbr-fonts-style align-left m-0\" mbr-theme-style=\"display-5\" mbr-if=\"showName\" data-app-selector=\".card-title, .content-wrap\">Our Beverages</h5>\n\n                        <p class=\"card-text mbr-fonts-style align-left\" data-app-selector=\".card-text, .mbr-section-btn, .social-row\" mbr-theme-style=\"display-7\" mbr-if=\"showCardText\">\n                            Text</p>\n\n                        <div class=\"mbr-section-btn card-btn align-left\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-if=\"showCardButtons\" mbr-theme-style=\"display-4\"><a class=\"btn btn-lg btn-white-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">BOOK ONLINE</a></div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-sm-6 col-lg-3\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-wrap\">\n                    <div class=\"image-wrap\">\n                        <div class=\"more\">\n                            <svg class=\"img-svg\" width=\"100\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\" version=\"1.0\">\n                                <g>\n                                    <path stroke=\"#000\" fill=\"#00ffff\" stroke-width=\"0\" d=\"m6.3597,35.19471c3.72928,-14.92599 8.15276,-26.3096 24.79653,-31.20482c16.64376,-4.89522 47.61714,-4.17429 56.63326,15.6024c9.01612,19.77669 10.43127,65.01743 -7.40514,73.44612c-17.83641,8.42869 -52.82388,8.41088 -62.93475,-7.63655c-10.11087,-16.04743 -15.58461,-25.33055 -12.23805,-47.14544l1.14815,-3.06171z\" id=\"svg_3\"></path>\n                                </g>\n                            </svg>\n                            <p class=\"read mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".read\">More</p>\n                        </div>\n                        <img src=\"@PROJECT_PATH@/assets/images/features3.jpg\">\n                    </div>\n                    <div class=\"content-wrap\">\n                        <h6 class=\"mbr-role mbr-fonts-style mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showRole\" data-app-selector=\".mbr-role, .social-row\">\n                            27.07.21</h6>\n                        <h5 class=\"mbr-section-title card-title mbr-fonts-style align-left m-0\" mbr-theme-style=\"display-5\" mbr-if=\"showName\" data-app-selector=\".card-title, .content-wrap\">Special Fresh</h5>\n\n                        <p class=\"card-text mbr-fonts-style align-left\" data-app-selector=\".card-text, .mbr-section-btn, .social-row\" mbr-theme-style=\"display-7\" mbr-if=\"showCardText\">Text</p>\n\n                        <div class=\"mbr-section-btn card-btn align-left\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-if=\"showCardButtons\" mbr-theme-style=\"display-4\"><a class=\"btn btn-lg btn-white-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">BOOK ONLINE</a></div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"col-sm-6 col-lg-3\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-wrap\">\n                    <div class=\"image-wrap\">\n                        <div class=\"more\">\n                            <svg class=\"img-svg\" width=\"100\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\" version=\"1.0\">\n                                <g>\n                                    <path stroke=\"#000\" fill=\"#00ffff\" stroke-width=\"0\" d=\"m6.3597,35.19471c3.72928,-14.92599 8.15276,-26.3096 24.79653,-31.20482c16.64376,-4.89522 47.61714,-4.17429 56.63326,15.6024c9.01612,19.77669 10.43127,65.01743 -7.40514,73.44612c-17.83641,8.42869 -52.82388,8.41088 -62.93475,-7.63655c-10.11087,-16.04743 -15.58461,-25.33055 -12.23805,-47.14544l1.14815,-3.06171z\" id=\"svg_3\"></path>\n                                </g>\n                            </svg>\n                            <p class=\"read mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".read\">More</p>\n                        </div>\n                        <img src=\"@PROJECT_PATH@/assets/images/features4.jpg\">\n                    </div>\n                    <div class=\"content-wrap\">\n                        <h6 class=\"mbr-role mbr-fonts-style mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showRole\" data-app-selector=\".mbr-role, .social-row\">\n                            28.07.21</h6>\n                        <h5 class=\"mbr-section-title card-title mbr-fonts-style align-left m-0\" mbr-theme-style=\"display-5\" mbr-if=\"showName\" data-app-selector=\".card-title, .content-wrap\">Top Cocktails</h5>\n\n                        <p class=\"card-text mbr-fonts-style align-left\" data-app-selector=\".card-text, .mbr-section-btn, .social-row\" mbr-theme-style=\"display-7\" mbr-if=\"showCardText\">\n                            Text</p>\n\n                        <div class=\"mbr-section-btn card-btn align-left\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-if=\"showCardButtons\" mbr-theme-style=\"display-4\"><a class=\"btn btn-lg btn-white-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">BOOK ONLINE</a></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "sBUf61wsqI",
-          "_anchor": "features03-3",
-          "_sourceTheme": "beveragem5",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [],
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_params": {
-            "autoplay": true,
-            "animType": "fade",
-            "theme": "animated",
-            "slides": [
-              {
-                "image": "@PROJECT_PATH@/assets/images/5e6a8815.jpg-2000x1195.jpg",
-                "linkUrl": "http://google.com",
-                "link": false,
-                "src": "@ADDONS_PATH@/wowslider/assets/images/slide2.jpg",
-                "tooltip": "@PROJECT_PATH@/assets/images/tooltip2.jpg",
-                "title": "title 2",
-                "text": "text 2",
-                "active": true
-              },
-              {
-                "image": "@PROJECT_PATH@/assets/images/5e6a9015.jpg-2000x1195.jpg",
-                "linkUrl": "http://google.com",
-                "link": false,
-                "src": "@ADDONS_PATH@/wowslider/assets/images/slide2.jpg",
-                "tooltip": "@PROJECT_PATH@/assets/images/tooltip2.jpg",
-                "title": "title 2",
-                "text": "text 2",
-                "active": false
-              }
-            ],
-            "fullScreen": true,
-            "showCaptions": false,
-            "hideControls": true,
-            "responsive": "1",
-            "paddingTop": "2",
-            "paddingBottom": "4",
-            "captionsEffect": "slide",
-            "showBullets": false,
-            "bgColor": "#bed3f9",
-            "timeout": "6",
-            "duration": "5.5",
-            "customSize": false,
-            "customWidth": "1600",
-            "customHeight": "1080",
-            "size": "1024x576",
-            "width": "1024",
-            "height": "576"
-          },
-          "articleLayout": false,
-          "alias": "wowslider",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "wowslider",
-          "_sourceTheme": "beveragem5",
-          "_anchor": "wowslider-8"
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
             "background-color": "@bgColor",
             ".counter-container": {
               "ul": {
@@ -1163,7 +922,7 @@
             }
           },
           "_name": "list01",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"list1\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"10\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Stylized\" name=\"stylizedCounters\" checked>\n        <input type=\"checkbox\" title=\"Mark\" name=\"mark\" condition=\"stylizedCounters\" checked>\n        <select title=\"Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\" selected>Сircle Fill</option>\n            <option value=\"circle\">Circle</option>\n            <option value=\"square\">Square</option>\n        </select>\n        <input type=\"color\" name=\"iconColor\" title=\"Color\" value=\"#1a449a\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#f8f8f8\">\n    </mbr-parameters>\n    <svg class=\"svg-top\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 1600 40\" style=\"enable-background:new 0 0 1600 40;\" preserveAspectRatio=\"none\">\n        <style type=\"text/css\">\n            .st0 {\n                fill: #1A449A;\n            }\n        </style>\n        <path class=\"st0\" d=\"M-1,15.7c200.1,0,200.7,13.8,400.9,13.8C600,29.5,600.4,9.3,800.5,9.3S998.8,36.8,1199,36.8\n\ts201.9-21.1,402-21.1v24.1L-1,40V15.7z\"></path>\n    </svg>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"counter-container col-md-12 col-lg-{{textWidth}}\">\n                <h4 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>\n                    Some usefull information...\n                </b></h4>\n                <div class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                    <ul>\n                        <li>Our hotel is available in the period from 1st June - 10th October. You can book your stay with a minimum stay of 3 nights.</li><li>If you book Online via our website you may find better deals and save money. Cancellation and prepayment policies vary according to accommodation type and period.</li>\n                        <li>Quiet hours are between 22:00 and 09:00. Parties/events are not allowed.</li>\n                        <li>Suspendisse venenatis enim in sapien pharetra semper. Nulla a quam hendrerit, auctor turpis\n                            id, tempus ipsum. Aenean consectetur hendrerit tincidunt.</li>\n                        <li>Vulputate felis justo pulvinar quam, vel varius nisl odio at felis. Aliquam feugiat justo\n                            non tortor tincidunt, nec ullamcorper massa auctor. In nec posuere ex.</li>\n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"list1\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"10\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Stylized\" name=\"stylizedCounters\" checked>\n        <input type=\"checkbox\" title=\"Mark\" name=\"mark\" condition=\"stylizedCounters\" checked>\n        <select title=\"Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\" selected>Сircle Fill</option>\n            <option value=\"circle\">Circle</option>\n            <option value=\"square\">Square</option>\n        </select>\n        <input type=\"color\" name=\"iconColor\" title=\"Color\" value=\"#1a449a\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#f8f8f8\">\n    </mbr-parameters>\n    <svg class=\"svg-top\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 1600 40\" style=\"enable-background:new 0 0 1600 40;\" preserveAspectRatio=\"none\">\n        <style type=\"text/css\">\n            .st0 {\n                fill: #1A449A;\n            }\n        </style>\n        <path class=\"st0\" d=\"M-1,15.7c200.1,0,200.7,13.8,400.9,13.8C600,29.5,600.4,9.3,800.5,9.3S998.8,36.8,1199,36.8\n\ts201.9-21.1,402-21.1v24.1L-1,40V15.7z\"></path>\n    </svg>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"counter-container col-md-12 col-lg-{{textWidth}}\">\n                <h4 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>Our room types with some usefull information:</b></h4>\n                <div class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                    <ul>\n                        <li>Our hotel is available in the period from 1st June - 10th October. You can book your stay with a minimum stay of 3 nights.</li><li>If you book Online via our website you may find better deals and save money. Cancellation and prepayment policies vary according to accommodation type and period.</li>\n                        <li>Quiet hours are between 22:00 and 09:00. Parties/events are not allowed.</li>\n                        <li>Suspendisse venenatis enim in sapien pharetra semper. Nulla a quam hendrerit, auctor turpis\n                            id, tempus ipsum. Aenean consectetur hendrerit tincidunt.</li>\n                        <li>Vulputate felis justo pulvinar quam, vel varius nisl odio at felis. Aliquam feugiat justo\n                            non tortor tincidunt, nec ullamcorper massa auctor. In nec posuere ex.</li>\n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "sBUfSVK3HR",
           "_anchor": "list01-b",
           "_sourceTheme": "beveragem5",
@@ -1171,6 +930,50 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_params": {
+            "autoplay": true,
+            "animType": "fade",
+            "theme": "animated",
+            "slides": [
+              {
+                "image": "@PROJECT_PATH@/assets/images/5e6a9015.jpg-2000x1195.jpg",
+                "linkUrl": "http://google.com",
+                "link": false,
+                "src": "@ADDONS_PATH@/wowslider/assets/images/slide2.jpg",
+                "tooltip": "@PROJECT_PATH@/assets/images/tooltip2.jpg",
+                "title": "Budget",
+                "text": "Double room",
+                "active": true
+              }
+            ],
+            "fullScreen": true,
+            "showCaptions": true,
+            "hideControls": false,
+            "responsive": "1",
+            "paddingTop": "2",
+            "paddingBottom": "4",
+            "captionsEffect": "slide",
+            "showBullets": false,
+            "bgColor": "#bed3f9",
+            "timeout": "6",
+            "duration": "5.5",
+            "customSize": false,
+            "customWidth": "1600",
+            "customHeight": "1080",
+            "size": "1024x576",
+            "width": "1024",
+            "height": "576"
+          },
+          "articleLayout": false,
+          "alias": "wowslider",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "wowslider",
+          "_sourceTheme": "beveragem5",
+          "_anchor": "wowslider-8"
         },
         {
           "alias": false,
