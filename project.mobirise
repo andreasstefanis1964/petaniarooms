@@ -933,7 +933,7 @@
         },
         {
           "_params": {
-            "autoplay": true,
+            "autoplay": false,
             "animType": "fade",
             "theme": "animated",
             "slides": [
@@ -945,6 +945,56 @@
                 "tooltip": "@PROJECT_PATH@/assets/images/tooltip2.jpg",
                 "title": "Budget",
                 "text": "Double room",
+                "active": false
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/5e6a9027.jpg-2000x1195.jpg",
+                "linkUrl": "http://google.com",
+                "link": false,
+                "src": "@ADDONS_PATH@/wowslider/assets/images/slide2.jpg",
+                "tooltip": "@PROJECT_PATH@/assets/images/tooltip2.jpg",
+                "title": "Budget",
+                "text": "Twin room",
+                "active": false
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/5e6a8780.jpg-2000x1195.jpg",
+                "linkUrl": "http://google.com",
+                "link": false,
+                "src": "@ADDONS_PATH@/wowslider/assets/images/slide2.jpg",
+                "tooltip": "@PROJECT_PATH@/assets/images/tooltip2.jpg",
+                "title": "Small",
+                "text": "Double room",
+                "active": false
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/5e6a8783.jpg-2000x1195.jpg",
+                "linkUrl": "http://google.com",
+                "link": false,
+                "src": "@ADDONS_PATH@/wowslider/assets/images/slide2.jpg",
+                "tooltip": "@PROJECT_PATH@/assets/images/tooltip2.jpg",
+                "title": "Small",
+                "text": "Twin room",
+                "active": false
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/5e6a8771.jpg-2000x1195.jpg",
+                "linkUrl": "http://google.com",
+                "link": false,
+                "src": "@ADDONS_PATH@/wowslider/assets/images/slide2.jpg",
+                "tooltip": "@PROJECT_PATH@/assets/images/tooltip2.jpg",
+                "title": "Economy",
+                "text": "Triple room",
+                "active": false
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/5e6a9050.jpg-2000x1195.jpg",
+                "linkUrl": "http://google.com",
+                "link": false,
+                "src": "@ADDONS_PATH@/wowslider/assets/images/slide2.jpg",
+                "tooltip": "@PROJECT_PATH@/assets/images/tooltip2.jpg",
+                "title": "Studio",
+                "text": "with Kitchen",
                 "active": true
               }
             ],
@@ -957,8 +1007,8 @@
             "captionsEffect": "slide",
             "showBullets": false,
             "bgColor": "#bed3f9",
-            "timeout": "6",
-            "duration": "5.5",
+            "timeout": "4",
+            "duration": "3.5",
             "customSize": false,
             "customWidth": "1600",
             "customHeight": "1080",
