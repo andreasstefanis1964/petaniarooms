@@ -1326,6 +1326,52 @@ section.lazy-placeholder:after {
 .cid-sBTUWbBvMs .mbr-section-btn {
   color: #ffffff;
 }
+.cid-sBUf7bgybF {
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+  background-color: #f8f8f8;
+}
+.cid-sBUf7bgybF .svg-top {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: -48px;
+  height: 50px;
+  transform-origin: bottom;
+  animation: 1.5s ease-in-out infinite alternate svg-wave;
+  fill: #1a449a;
+}
+.cid-sBUf7bgybF .svg-top .st0 {
+  fill: #f8f8f8;
+}
+@media (max-width: 992px) {
+  .cid-sBUf7bgybF .svg-top {
+    width: 1000px;
+  }
+}
+@keyframes svg-wave {
+  from {
+    transform: scaleX(1) scaleY(1.1);
+  }
+  to {
+    transform: scaleX(1) scaleY(1.6);
+  }
+}
+.cid-sBUf7bgybF .mbr-section-title {
+  color: #1a449a;
+}
+@media (min-width: 1400px) {
+  .cid-sBUf7bgybF .col-12 {
+    padding: 0 2rem;
+  }
+  .cid-sBUf7bgybF .row {
+    margin: 0 -2rem;
+  }
+}
+.cid-sBUf7bgybF .mbr-text,
+.cid-sBUf7bgybF .mbr-section-btn {
+  color: #1a449a;
+}
 .cid-sBUeZxDTz4 {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -1447,52 +1493,6 @@ section.lazy-placeholder:after {
 }
 .cid-uGFgxy5ElO .mbr-section-subtitle {
   color: #ffffff;
-}
-.cid-sBUf7bgybF {
-  padding-top: 7rem;
-  padding-bottom: 10rem;
-  background-color: #f8f8f8;
-}
-.cid-sBUf7bgybF .svg-top {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: -48px;
-  height: 50px;
-  transform-origin: bottom;
-  animation: 1.5s ease-in-out infinite alternate svg-wave;
-  fill: #1a449a;
-}
-.cid-sBUf7bgybF .svg-top .st0 {
-  fill: #f8f8f8;
-}
-@media (max-width: 992px) {
-  .cid-sBUf7bgybF .svg-top {
-    width: 1000px;
-  }
-}
-@keyframes svg-wave {
-  from {
-    transform: scaleX(1) scaleY(1.1);
-  }
-  to {
-    transform: scaleX(1) scaleY(1.6);
-  }
-}
-.cid-sBUf7bgybF .mbr-section-title {
-  color: #1a449a;
-}
-@media (min-width: 1400px) {
-  .cid-sBUf7bgybF .col-12 {
-    padding: 0 2rem;
-  }
-  .cid-sBUf7bgybF .row {
-    margin: 0 -2rem;
-  }
-}
-.cid-sBUf7bgybF .mbr-text,
-.cid-sBUf7bgybF .mbr-section-btn {
-  color: #1a449a;
 }
 .cid-sBUf61wsqI {
   padding-top: 7rem;
