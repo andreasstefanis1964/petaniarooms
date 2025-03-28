@@ -1593,6 +1593,9 @@ section.lazy-placeholder:after {
   padding-bottom: 10rem;
   background-color: #1a449a;
 }
+.cid-sBUfjk3ukH .row {
+  flex-direction: row-reverse;
+}
 .cid-sBUfjk3ukH ul {
   padding: 0;
 }
