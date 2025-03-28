@@ -604,6 +604,9 @@
                   }
                 }
               }
+            },
+            ".mbr-section-subtitle, .content": {
+              "color": "#faeebc"
             }
           },
           "_name": "header04",
